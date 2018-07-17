@@ -13,17 +13,17 @@ The goal is to check the applicant is able to:
 - Write clean code,
 - Cover the code with unit tests,
 - Use git,
-- Write short and clean documentation
+- Write short and clean documentation.
 
 
 ### Requirements
 
 1. Create a public github repository that you will send to us.
-2. For implementation you should and can only use **Web Components**.
-3. You should consume the data of the fake API provided by this repository (see section 'Materials' below),
+2. For implementation you should and can only use **Web Components**. No frameworks or external libraries can be used for this assessment.
+3. You should consume the data of the fake API provided by this repository (see section 'Materials' below).
 4. Create a single page that list all columns with their respective cards.
-	- For each column, we should see the title,
-	- For each card, we should see the title, if there's a description or not and it should be placed in the column it belongs to.
+	- Each column is defined by a title and the cards it contains,
+	- Each card is defined by a mandatory title, an optional description and the column it belongs to.
 5. The user should be able to:
 	- display all columns with all cards,
 	- create a new card,
@@ -32,17 +32,20 @@ The goal is to check the applicant is able to:
 	- add a column,
 	- modify a column,
 	- delete a column,
-	- search for any keyword presents on one or multiple cards and the view shall update without reloading the whole page,
+	- search for any keywords presents on one or multiple cards. The view shall update without reloading the whole page,
 	- Drag and drop a card from one column to another,
 	- Click on a card to see its description:
-		- The description should be in the same view and extend the container,
+		- The description should be in the same view and extend the card container,
 		- It should not open another page or popup/popin.
-6. Cards and columns should be unique.
+6. Cards and columns should be unique (i.e we should not see 2 cards or 2 columns with the same title).
 7. Explain in simple words how to install and run your project within your README file.
-8. Send the link to your github repository for reviewing at [tgcorbeaux@maltem.com](mailto:tgcorbeaux@maltem.com).
+8. Send the link of your github repository for reviewing to [tgcorbeaux@maltem.com](mailto:tgcorbeaux@maltem.com).
 
 ##### Remarks
 Feel free to add everything you think meaningful to your application as long as the above requirements are done.
+In addition and for helping you starting this assessment:
+	- This is not compulsory to make a cross-platforms app,
+	- You might want to use Chrome for your development as it supports natively web components and their dependencies.
 
 ### Specification
 
