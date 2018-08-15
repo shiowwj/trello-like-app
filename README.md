@@ -2,6 +2,10 @@
 
 This page contains description and requirements for a Front-End assignment on [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components).
 
+### Duration
+
+The duration of this assessment is two days.
+
 ### Goal
 
 
@@ -44,8 +48,8 @@ The goal is to check the applicant is able to:
 ##### Remarks
 Feel free to add everything you think meaningful to your application as long as the above requirements are done.
 In addition and for helping you starting this assessment:
-	- This is not compulsory to make a cross-platforms app,
-	- You might want to use Chrome for your development as it supports natively web components and their dependencies.
+- This is not compulsory to make a cross-platforms app,
+- You might want to use Chrome for your development as it supports natively web components and their dependencies.
 
 ### Specification
 
