@@ -4,7 +4,7 @@ This page contains description and requirements for a Front-End assignment on [W
 
 ### Duration
 
-The duration of this assessment is two days.
+The duration of this assessment is usually two days.
 
 ### Goal
 
@@ -23,7 +23,7 @@ The goal is to check the applicant is able to:
 ### Requirements
 
 1. Create a public github repository that you will send to us.
-2. For implementation you should and can only use **Web Components**. No frameworks or external libraries can be used for this assessment.
+2. For implementation you should and can only use **Web Components**. No frameworks or external libraries can be used except for testing.
 3. You should consume the data of the fake API provided by this repository (see section 'Materials' below).
 4. Create a single page that list all columns with their respective cards.
 	- Each column is defined by a title and the cards it contains,
