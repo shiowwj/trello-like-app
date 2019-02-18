@@ -43,7 +43,7 @@ The goal is to check the applicant is able to:
 		- It should not open another page or popup/popin.
 6. Cards and columns should be unique (i.e we should not see 2 cards or 2 columns with the same title).
 7. Explain in simple words how to install and run your project within your README file.
-8. Send the link of your github repository for reviewing to [tgcorbeaux@maltem.com](mailto:tgcorbeaux@maltem.com).
+8. Send the link of your github repository for reviewing to [jlow@maltem.com](mailto:jlow@maltem.com).
 
 ##### Remarks
 Feel free to add everything you think meaningful to your application as long as the above requirements are done.
