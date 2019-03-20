@@ -4,24 +4,24 @@ This page contains description and requirements for a Front-End assignment on [W
 
 ### Duration
 
-The duration of this assessment is usually two days.
+The duration of this assessment is **two days**. The scope of the assessment is intentionally large to give you room to show which aspects of development you would prioritize.
 
 ### Goal
 
 The goal is to check the applicant is able to:
 
-- Grasp what are web components,
+- Grasp the concept of web components,
 - Create an application from scratch using web components,
-- Make a responsive view,
+- Develop a responsive interface,
 - Write clean code,
-- Cover the code with unit tests,
 - Use git with readable and descriptive commits,
-- Write clean, succint and readable documentation.
+- Write succint and readable documentation,
+- Cover the code with tests.
 
 ### Requirements
 
 1. Create a public github repository that you will send to us.
-2. For implementation you should and **can only use [Web Components](https://www.webcomponents.org/introduction)**. No frameworks or external libraries can be used for the application itself, but external frameworks are expected for testing purposes.
+2. You solution should use **only [Web Components](https://www.webcomponents.org/introduction)** aside from vanilla HTML, CSS and JS. No frameworks or external libraries can be used for the application itself. However, external frameworks are allowed for tests.
 3. You should consume the data of the fake API provided in this repository (see section 'Materials' below).
 4. Create a single page that lists all columns with their respective cards.
    - Each column is defined by a title and the cards it contains,
@@ -38,9 +38,7 @@ The goal is to check the applicant is able to:
    - drag and drop a card from one column to another,
    - click on a card to see its description. The description should be in the same view and extend the card container. It should not open in another page or popup/modal.
 6. Cards and columns should be unique (i.e we should not see 2 cards or 2 columns with the same title).
-7. Your README should have detailed instructions on how to install your application and a brief overview on how the application is structured. Assume that other developers will continue work on your application with little or no context or knowledge transfer.
-8. The application should have a comprehensive test suite with good coverage. Unit testing as well as end-to-end testing is encouraged.
-9. Send the link of your github repository for reviewing to [jlow@maltem.com](mailto:jlow@maltem.com).
+7. Send the link of your github repository for reviewing to [jlow@maltem.com](mailto:jlow@maltem.com).
 
 ### Specification
 
@@ -48,8 +46,8 @@ The goal is to check the applicant is able to:
 - All code should be self-contained (i.e. there should not be any npm dependencies for serving etc. that are globally installed)
 - The view should be responsive, user-friendly and clear.
 - Use of version control (commits, branches, etc.) should be clear and well-documented, preferably with [semantic commit messages](https://seesparkbox.com/foundry/semantic_commit_messages) or similar.
-- Documentation should be clear on how to install the application, as well as the structure of the application as reference for future development.
-- Testing should cover as much of the application as possible, with both positive and negative cases. You are free to use any frameworks of choice (e.g. Jest, Mocha, Webdriver, web-component-tester, Cypress, etc.) to test your code. Consider adding a 'Testing Strategy' section in your README that briefly describes your approach.
+- Documentation should be clear on how to install the application, as well as the structure of the application as reference for future development. Assume that other developers will continue work on your application with little or no context or knowledge transfer.
+- Testing (where applicable) should cover as much of the application as possible. You are free to use any frameworks of choice (e.g. Jest, Mocha, Webdriver, web-component-tester, Cypress, etc.) to test your code. We suggest Jest. Also, consider adding a 'Testing Strategy' section in your README that briefly describes your approach.
 
 ##### Remarks
 
