@@ -22,7 +22,7 @@ The goal is to check the applicant is able to:
 
 1. Create a public github repository that you will send to us.
 2. You solution should use **only [Web Components](https://www.webcomponents.org/introduction)** aside from vanilla HTML, CSS and JS. No frameworks or external libraries can be used for the application itself. However, external frameworks are allowed for tests.
-3. You should consume the data of the fake API provided in this repository (see section 'Materials' below).
+3. You should consume the data of the fake API provided in this repository (see section 'Materials' below). 
 4. Create a single page that lists all columns with their respective cards.
    - Each column is defined by a title and the cards it contains,
    - Each card is defined by a mandatory title, an optional description and the column that it belongs to.
@@ -44,6 +44,7 @@ The goal is to check the applicant is able to:
 
 - The code needs to work after we pull it, `npm install`, `npm test` and `npm start`, with no bugs.
 - All code should be self-contained (i.e. there should not be any npm dependencies for serving etc. that are globally installed)
+- Each Update must be saved to db.json file using the fake API
 - The view should be responsive, user-friendly and clear.
 - Use of version control (commits, branches, etc.) should be clear and well-documented, preferably with [semantic commit messages](https://seesparkbox.com/foundry/semantic_commit_messages) or similar.
 - Documentation should be clear on how to install the application, as well as the structure of the application as reference for future development. Assume that other developers will continue work on your application with little or no context or knowledge transfer.
