@@ -1,0 +1,8 @@
+.app {
+    padding: 15px;
+}
+
+#button-wrapper>button {
+    border-radius: 5px;
+    background-color: green;
+}
