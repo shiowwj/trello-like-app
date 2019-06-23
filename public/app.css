@@ -1,0 +1,35 @@
+#app-wrapper {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+#button-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#button-wrapper>button {
+    padding: 5px;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+    background-color: LightSeaGreen;
+}
+
+#search-bar {
+    width: 150px;
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background-color: LavenderBlush;
+    color: #4d4d4d;
+    min-width: 230px;
+    max-width: 550px;
+    margin: 0 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 300;
+}
+
+#columns-wrapper {
+    padding: 0 15px 0 15px;
+    display: flex;
+}
