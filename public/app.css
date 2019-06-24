@@ -1,11 +1,17 @@
+body {
+    background-color: BlanchedAlmond;
+}
+
 #app-wrapper {
     padding: 15px;
-    border: 1px solid black;
 }
 
 #button-wrapper {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 #button-wrapper>button {
@@ -13,6 +19,14 @@
     margin: 0 10px 0 10px;
     border-radius: 5px;
     background-color: LightSeaGreen;
+}
+
+#button-wrapper>button:hover {
+    padding: 5px;
+    margin: 0 10px 0 10px;
+    /* border-radius: 5px; */
+    background-color: white;
+    font: grey;
 }
 
 #search-bar {
@@ -27,6 +41,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 300;
+    border-radius: 5px;
 }
 
 #columns-wrapper {
