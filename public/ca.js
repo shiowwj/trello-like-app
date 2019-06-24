@@ -8,7 +8,7 @@ const ca = {
         return columnComponent;
     },
     createCard: card => {
-        // console.log('create CARD!>?', card);
+        console.log('create CARD!>?', card);
         const cardComponent = document.createElement('card-task');
         cardComponent.setAttribute('id', card.id);
         cardComponent.setAttribute('title', card.title);

@@ -8,7 +8,7 @@
             <div id="column-content">
                 <div id="column-header">
                     <div id="column-title">
-                        <h3>COLUMN!</h3>
+                        
                     </div>
                     <div id="column-delete">
                        <p> X</p>
@@ -32,26 +32,26 @@
         connectedCallback() {
             this.setColumnContent();
             console.log('column js callback');
-            let addCardbutton = this.shadowRoot.querySelector('button');
+            let addCardButton = this.shadowRoot.querySelector('button');
             // console.log(addCardbutton);
-            addCardbutton.addEventListener('click', this.createCardForm);
+            addCardButton.addEventListener('click', this.createCardForm);
 
             this._columnContent = this.shadowRoot.getElementById('column-content');
             // console.log(this._columnContent);
+            this._columnTitle = this.shadowRoot.getElementById('column-title');
+            this._columnTitle.addEventListener('click', (e) => { this.editColumnTitle(e) });
         }
 
         createCardForm = () => {
-            var x = {
-                    key: 'value',
-                }
-                //when create card button is clicked
-                //creates text field
+            //when create card button is clicked
+            //creates text field
             let textarea = document.createElement('textarea');
             textarea.placeholder = 'Enter a title for this card...';
 
             let form = document.createElement('form');
             form.id = 'add-card-form';
             form.append(textarea);
+
             //remmoves button display
             let addCardButton = this.shadowRoot.getElementById('add-card-button');
             addCardButton.style.display = 'none';
@@ -69,14 +69,51 @@
             //when user presses enter, new card to be created
             // need to save into db.json
             createCard.addEventListener('keydown', e => {
+
+                let columnId = parseInt((e.path[4].id).slice(7, e.path[4].id.length));
                 if (e.keyCode === 13) {
                     if (e.target.value.trim().length === 0) {
                         return;
                     }
                     textarea.blur();
-                    this._columnContent.appendChild(ca.createCard(x));
+                    console.log('HELLO WHAT IS THE TITLE:', e);
+                    console.log('HELLO WHAT IS THE COLUMN ID STUFF:', columnId);
+                    let cardInput = {
+                        "title": e.target.value,
+                        "description": "Add a description!",
+                        "columnId": columnId,
+                    }
+                    db.create('cards', cardInput);
+
+                    this._columnContent.appendChild(ca.createCard(cardInput));
                 }
             })
+
+
+        }
+
+        editColumnTitle = (e) => {
+            console.log('Edit column title', e.target);
+            //creates text field
+            let textarea = document.createElement('textarea');
+            textarea.placeholder = 'What is this list for...';
+
+            let form = document.createElement('form');
+            form.id = 'column-title-form';
+            form.append(textarea);
+
+            let columnTitleDiv = this.shadowRoot.getElementById('column-title');
+            columnTitleDiv.style.display = 'none';
+
+            let currentColumnDiv = this.shadowRoot.getElementById('column-wrapper')
+            currentColumnDiv.insertBefore(form, currentColumnDiv.firstChild);
+
+
+            textarea.focus();
+            textarea.addEventListener('blur', e => {
+                columnTitleDiv.style.display = 'block';
+                this.shadowRoot.getElementById('column-title-form').remove();
+            });
 
 
         }
@@ -84,9 +121,10 @@
         setColumnContent() {
             if (this.hasAttribute('title')) {
                 this.shadowRoot.getElementById('column-title').innerText = this.title;
+
             }
             if (this.hasAttribute('id')) {
-                this.id = 'column' + this.id;
+                this.id = 'column_' + this.id;
             }
         }
     }

@@ -1,6 +1,9 @@
 #column-wrapper {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: aquamarine;
+    border-radius: 15px;
     -webkit-animation: fadein 1.2s;
     /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 1.2s;
@@ -12,14 +15,22 @@
     animation: fadein 1.2s;
 }
 
+#column-title {
+    font-size: larger;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+
 #column-header {
     display: flex;
+    /* flex-direction: row; */
     justify-content: space-around;
 }
 
 #add-card-button {
-    padding: 5px;
-    margin: 0 10px 0 10px;
+    padding: 8px;
+    margin: 0 10px 10px 10px;
     border-radius: 5px;
     background-color: LightSkyBlue;
 }
@@ -45,6 +56,13 @@ textarea {
     box-shadow: 1px 1px rgba(30, 30, 30, 0.3);
     resize: vertical;
 }
+
+#column-title-form>textarea {
+    width: 150px;
+}
+
+
+/********************Misc*******************/
 
 @keyframes fadein {
     from {

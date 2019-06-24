@@ -7,7 +7,7 @@
         <div id="app-wrapper">
             <div id="button-wrapper">
                 <button>
-                    Add Column
+                    Add a New List
                 </button>
                 <div id="search-bar-wrapper">
                 <input id="search-bar" placeholder="Search stuff">
@@ -60,7 +60,7 @@
                 this._columnList.appendChild(colComponent);
                 // console.log('a column is:', column);
                 cards.forEach(card => {
-                    if (colComponent.id === 'column' + card.columnId) {
+                    if (colComponent.id === 'column_' + card.columnId) {
                         let cardComponent = ca.createCard(card);
                         colComponent.shadowRoot.getElementById('column-content').appendChild(cardComponent);
                     }

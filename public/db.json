@@ -1,52 +1,78 @@
 {
-    "columns": [{
-            "id": 1,
-            "title": "Column 1"
-        },
-        {
-            "id": 2,
-            "title": "Column 2"
-        },
-        {
-            "title": "(No Title)",
-            "id": 3
-        }
-    ],
-    "cards": [{
-            "id": 1,
-            "title": "Card 1",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "columnId": 1
-        },
-        {
-            "id": 2,
-            "title": "Card 2",
-            "description": "Quisque et pellentesque sem.",
-            "columnId": 1
-        },
-        {
-            "id": 3,
-            "title": "Practise React",
-            "description": "Nulla porttitor erat a sollicitudin volutpat.",
-            "columnId": 1
-        },
-        {
-            "id": 4,
-            "title": "Card 4",
-            "description": "Quisque id scelerisque felis, sit amet scelerisque nunc.",
-            "columnId": 2
-        },
-        {
-            "id": 5,
-            "title": "Card 5",
-            "description": "Suspendisse posuere ipsum at dui lacinia, ut faucibus lectus mollis.",
-            "columnId": 2
-        },
-        {
-            "title": "hello",
-            "description": "(No description)",
-            "columnId": 1,
-            "id": 6
-        }
-    ]
+  "columns": [
+    {
+      "id": 1,
+      "title": "Key Features"
+    },
+    {
+      "id": 2,
+      "title": "Add-on Features"
+    },
+    {
+      "title": "Task Completion List",
+      "id": 3
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "title": "Add Column-like list",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "columnId": 1
+    },
+    {
+      "id": 2,
+      "title": "Add Cards",
+      "description": "Quisque et pellentesque sem.",
+      "columnId": 1
+    },
+    {
+      "id": 3,
+      "title": "Practise React",
+      "description": "Nulla porttitor erat a sollicitudin volutpat.",
+      "columnId": 1
+    },
+    {
+      "id": 4,
+      "title": "Search bar feature",
+      "description": "Quisque id scelerisque felis, sit amet scelerisque nunc.",
+      "columnId": 2
+    },
+    {
+      "id": 5,
+      "title": "Change theme",
+      "description": "Suspendisse posuere ipsum at dui lacinia, ut faucibus lectus mollis.",
+      "columnId": 2
+    },
+    {
+      "title": "Backend",
+      "description": "Quisque id scelerisque felis, sit amet scelerisque nunc.",
+      "columnId": 1,
+      "id": 6
+    },
+    {
+      "title": "hello",
+      "description": "Add a description!",
+      "columnId": 2,
+      "id": 7
+    },
+    {
+      "title": "Toliet Bowl",
+      "description": "Add a description!",
+      "columnId": 3,
+      "id": 8
+    },
+    {
+      "title": "Move ",
+      "description": "Add a description!",
+      "columnId": 3,
+      "id": 9
+    },
+    {
+      "title": "Have a cold pint",
+      "description": "Add a description!",
+      "columnId": 3,
+      "id": 10
+    }
+  ]
 }
