@@ -1,4 +1,38 @@
 #column-wrapper {
     width: 100%;
-    border: 1px solid grey;
+    background-color: aquamarine;
+}
+
+#column-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#add-card-button {
+    padding: 5px;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+    background-color: LightSkyBlue;
+}
+
+#column-content {
+    width: 278px;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-top: 10px;
+}
+
+textarea {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    background-color: white;
+    width: 258px;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    border: 0;
+    border-style: none;
+    border-color: transparent;
+    border-radius: 3px;
+    box-shadow: 1px 1px rgba(30, 30, 30, 0.3);
+    resize: vertical;
 }

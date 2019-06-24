@@ -1,4 +1,7 @@
 (function() {
+
+
+
     console.log('APP JS')
     const template = document.createElement('template');
     template.setAttribute('id', 'app');
@@ -22,7 +25,7 @@
     class App extends HTMLElement {
         constructor() {
             super();
-
+            this.initalBoard = [];
             // const shadowRoot = this.attachShadow({
             //     mode: 'open'
             // });
@@ -41,7 +44,7 @@
             this._columnList = document.getElementById('columns-wrapper');
 
             this._addNewColumn.addEventListener('click', this._newColumnHandler);
-
+            db.getAll(this.initRender);
 
         }
 
@@ -57,6 +60,12 @@
 
 
         }
+
+        initRender = (all) => {
+
+            console.log('heyy gonna render this data now', all);
+
+        };
 
     }
 

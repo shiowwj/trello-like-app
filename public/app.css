@@ -32,4 +32,9 @@
 #columns-wrapper {
     padding: 0 15px 0 15px;
     display: flex;
+    justify-content: flex-start;
+}
+
+column-task {
+    margin: 0 5px 0 5px;
 }

@@ -6,12 +6,14 @@
         <link rel="stylesheet" href="./components/column/column.css">
         <div id="column-wrapper">
             <div id="column-content">
-                <h1 id="column-title">
-                    (Nil)
-                </h1>
-                <p id="column-delete">
-                    X
-                </p>
+                <div id="column-header">
+                    <div id="column-title">
+                        <h3>COLUMN!</h3>
+                    </div>
+                    <div id="column-delete">
+                       <p> X</p>
+                    </div>
+                </div>
             </div>
             <button id="add-card-button">
                     ADD CARD
@@ -64,11 +66,13 @@
 
             let createCard = this.shadowRoot.getElementById('add-card-form');
             //when user presses enter, new card to be created
+            // need to save into db.json
             createCard.addEventListener('keydown', e => {
                 if (e.keyCode === 13) {
                     if (e.target.value.trim().length === 0) {
                         return;
                     }
+                    textarea.blur();
                     this._columnContent.appendChild(ca.createCard(x));
                 }
             })

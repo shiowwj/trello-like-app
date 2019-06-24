@@ -5,9 +5,9 @@
     template.innerHTML = `
     <link rel="stylesheet" href="./components/cards/cards.css">
     <div id="card">
-        <h3 id="card-task">
+        <h4 id="card-task">
             HEllO
-        </h3>
+        </h4>
         <p id="card-edit">
             Edit
         </p>
