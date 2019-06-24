@@ -26,23 +26,30 @@ const db = {
     //create
     create: (type, object) => {
         console.log('add stuff', { type, object });
-        fetch(colUrl, {
-                method: 'POST',
-                body: JSON.stringify(object.key),
-            }).then(res => res.json())
-            .then(res => console.log('okay added', res))
-            .catch(error => console.error('Messed up:', error));
+        switch (type) {
+            case 'columns':
+                return fetch(colUrl, {
+                        method: 'POST',
+                        body: JSON.stringify(object),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                    }).then(res => res.json())
+                    .then(res => console.log('okay added column', res))
+                    .catch(error => console.error('Error:', error));
+            case 'cards':
+                return fetch(cardUrl, {
+                        method: 'POST',
+                        body: JSON.stringify(object),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                    }).then(res => res.json())
+                    .then(res => console.log('okay added card', res))
+                    .catch(error => console.error('Error:', error));
+        }
+
 
     },
 
 }
-
-// fetch(url, {
-//     method: 'POST', // or 'PUT'
-//     body: JSON.stringify(data), // data can be `string` or {object}!
-//     headers:{
-//       'Content-Type': 'application/json'
-//     }
-//   }).then(res => res.json())
-//   .then(response => console.log('Success:', JSON.stringify(response)))
-//   .catch(error => console.error('Error:', error));

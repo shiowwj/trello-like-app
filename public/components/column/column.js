@@ -30,13 +30,14 @@
 
         }
         connectedCallback() {
+            this.setColumnContent();
             console.log('column js callback');
             let addCardbutton = this.shadowRoot.querySelector('button');
             // console.log(addCardbutton);
             addCardbutton.addEventListener('click', this.createCardForm);
 
             this._columnContent = this.shadowRoot.getElementById('column-content');
-            console.log(this._columnContent);
+            // console.log(this._columnContent);
         }
 
         createCardForm = () => {
@@ -78,6 +79,15 @@
             })
 
 
+        }
+
+        setColumnContent() {
+            if (this.hasAttribute('title')) {
+                this.shadowRoot.getElementById('column-title').innerText = this.title;
+            }
+            if (this.hasAttribute('id')) {
+                this.id = 'column' + this.id;
+            }
         }
     }
     customElements.define('column-task', Column);

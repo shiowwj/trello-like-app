@@ -1,7 +1,4 @@
 (function() {
-
-
-
     console.log('APP JS')
     const template = document.createElement('template');
     template.setAttribute('id', 'app');
@@ -25,14 +22,6 @@
     class App extends HTMLElement {
         constructor() {
             super();
-            this.initalBoard = [];
-            // const shadowRoot = this.attachShadow({
-            //     mode: 'open'
-            // });
-            // this.shadowRoot.innerHTML = '<link rel="stylesheet" href="./app.css">';
-            // this.shadowRoot.appendChild(document.getElementById('app').content.cloneNode(true));
-
-
         }
 
         connectedCallback() {
@@ -63,8 +52,20 @@
 
         initRender = (all) => {
 
-            console.log('heyy gonna render this data now', all);
+            let cards = all.cardsData;
+            let columns = all.columnsData;
 
+            columns.forEach(column => {
+                let colComponent = ca.createColumn(column);
+                this._columnList.appendChild(colComponent);
+                // console.log('a column is:', column);
+                cards.forEach(card => {
+                    if (colComponent.id === 'column' + card.columnId) {
+                        let cardComponent = ca.createCard(card);
+                        colComponent.shadowRoot.getElementById('column-content').appendChild(cardComponent);
+                    }
+                })
+            })
         };
 
     }

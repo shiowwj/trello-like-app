@@ -32,9 +32,15 @@
             this._button.addEventListener('click', this.buttonHandler);
             //Get all data
             let x = {
-                key: "stuff",
-            }
-            db.create('columns', x);
+                "title": "stuff",
+            };
+            let y = {
+                "title": "Random Card",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "columnId": 2
+            };
+            // db.create('columns', x);
+            // db.create('cards', y);
 
         }
 
